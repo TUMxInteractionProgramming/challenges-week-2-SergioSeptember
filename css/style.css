@@ -1,0 +1,129 @@
+                                                        /*Section: Global*/
+*{
+    background-color: #D3D3D3;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+a, buttons{
+    text-transform: uppercase;
+}
+a{
+    color: #000000;
+}
+button{
+    background-color: #fff44f;
+    color: #000000;                     /*default color is black, just added it, just in case*/
+    text-align: center;
+}
+body{
+    font-family: Roboto, sans-serif;
+}
+                                                        /*End of Global section*/
+
+                                                        /*Section: App bar*/
+h1{
+    background-color: #228b22;
+    color: #ffffff;
+                                                        /*End of App bar section*/
+
+}
+                                                        /*Section: Channels list*/
+ul{
+    list-style-type:none;
+}
+li {                                  /*had to style lists here, had a different result when it was inline*/
+    background-color:#ffffff;
+    padding: 16px;
+    font-size: 16px;
+    height: 32px;
+    box-sizing: content-box;
+}
+div ul .selected2{
+    border-left: 4px solid #228b22;
+    color: #228b22;
+}
+ul li img{
+    vertical-align: middle;
+}
+                                                        /*End of Channels list section*/
+
+                                                        /*Section: Tab bar*/
+#tab-bar{
+    background-color: #228b22;
+    color: #ffffff;
+}
+small{
+    background-color:#228b22;                 /*had to put in, it showed a gray background ???*/
+}
+
+#tab-button{
+    background-color: white;
+    border: none;
+    font-size: 13px;
+}
+.divider{
+    width:33%;
+    height:auto;
+    display:inline-block;
+}
+#tab-button button{
+    height: 72px;
+    padding: 16px;
+}
+#tab-button img{
+    display: block;
+    margin: auto;  
+}
+#tab-button .selected{
+    border-bottom: 4px solid #228b22;
+    color: #228b22;
+}
+                                                /*End of Tab bar section*/
+
+                                                /*Section: Messages*/
+p{
+    background-color: #ffffff;
+}
+span{
+    text-transform:uppercase;                   /*added it to the w3w locations in the messages*/
+}
+i{                                              /*adjustments to time left in the metadata*/
+    font-size:larger;
+    font-style: normal;
+}
+.message div {
+    width: 80%;
+    margin-bottom: 8px;
+}
+.message h2{
+    font-size: medium;
+}
+.message p{
+    background-color:#ffffff;
+    padding: 16px;
+}
+.message button{
+    background-color:#CDDC39;
+    color:#000000;
+    text-transform: uppercase;
+}
+.message i{
+    font-size: larger;
+    font-style: normal;
+}
+.message{
+    margin-left: 17.5%;
+    margin-bottom: 8px;
+    
+}
+.own{
+    margin-left: -15%;
+    
+}
+h2 span{
+    color: #000000;
+}
+
+                                                    /*End of Messages section*/
