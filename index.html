@@ -3,100 +3,87 @@
 <html>
     <head>
         <title>Chatter|app</title>
-
-<style>
-    /*Challenge 2: Seeing that it is a chat app. I have chosen:
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
+        <!--Challenge 2: Seeing that it is a chat app. I have chosen:
         Primary color: Forest green
         Accent color: Lemon yellow
         Primary text color: White
-        Accent text color: Black
-    */
-*{
-    background-color: #D3D3D3;
-    font-family: Arial, sans-serif;
-}
-h1{
-    background-color: #228b22;
-    color: #ffffff;
-}
-small{
-    background-color:#228b22;                 /*had to put in, it showed a gray background ???*/
-}
-p{
-    background-color: #ffffff;
-}
-div h2{                                         /*I had to seperate the first h2 sequence from the second*/
-    background-color: #ffffff;
-}
-button{
-    background-color: #fff44f;
-    color: #000000;                           /*default color is black, just added it, just in case*/
-    text-transform: uppercase;
-}
-span{
-    text-transform:uppercase;                   /*added it to the w3w locations in the messages*/
-}
-i{                                              /*adjustments to time left in the metadata*/
-    font-size:larger;
-    font-style: normal;
-}
-li {                                            /*had to style lists here, had a different result when it was inline*/
-    background-color:#ffffff;
-}
-</style>
-</head>
+        Accent text color: Black                                 -->
+    
+    </head>
 
 <body>
     <!--Channel Area-->
-<h1>
-    <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Upgrade Browser" height="56px">Chatter|app
-</h1>
+    <h1>
+        <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Upgrade Browser" height="56px">Chatter|app
+    </h1>
 <div>                                               <!--changed channels to a list with images-->
-    <ul style="list-style-type:none;">
-        <li>#Water  <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Thumbs up">      </li>
+    <ul>
+        <li class="selected2">#Water  <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Thumbs up">   </li>
+        <hr>
         <li>#Fire   <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Thumbs down">  </li>
+        <hr>
         <li>#Lightning <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Thumbs up">   </li>
+        <hr>
         <li>#Air    <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="Thumbs down">  </li>
+        <hr>
         <li>#Earth  <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="Thumbs up">      </li>
     </ul>
 </div> 
-<div style="background-color:#ffffff;">             <!--buttons are grouped together with images-->
-    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb">New  </button>
-    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire">Trending         </button>
-    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star">Favorites        </button>
+<div id="tab-button">             <!--buttons are grouped together with images-->
+    <button type="button" class="selected"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="lightbulb">New     </button>
+    <div class="divider"></div>
+    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="fire">         Trending                    </button>
+    <div class="divider"></div>
+    <button type="button"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="star">         Favorites                   </button>
 </div>
 <hr>
 
     <!--Chat Area-->            <!--the chat area locations are linked and will open in a new tab-->
-<h1>#Water <small>by dots.film.animals</small></h1> 
-<h2 style="font-size:medium;">
-    <span><a href="https://map.what3words.com/daring.lion.race" style="color:#000000;" target="_blank">daring.lion.race</a></span> Fri, April 19th, 15:06     <i>2min left</i>
-</h2>  
-    <div style="width:80%;">
-        <p>Hello! How are you?</p>
-    </div>
+    <h1 id="tab-bar">#Water <small>by dots.film.animals</small>
+    </h1> 
+<div class="message">
+    <h2>
+        <span><a href="https://map.what3words.com/daring.lion.race" target="_blank">daring.lion.race</a></span> Fri, April 19th, 15:06              <i>2min left</i>
+    </h2>  
+<div>
+    <p>Hello! How are you?</p>
+</div>
     <button type="button">+5 min</button>
-<h2 style="font-size:medium;">
-    <span><a href="https://map.what3words.com/sampler.trips.stays" style="color:#000000;" target="_blank">sampler.trips.stays</a></span> Fri, April 19th, 15:08  <i>4min left</i>
-</h2>   
-    <div style="width:80%;">
-        <p>I am good and you?</p>
-    </div>
+</div>
+<div class="message">
+    <div class="own">
+        <h2>
+            <span><a href="https://map.what3words.com/sampler.trips.stays" target="_blank">sampler.trips.stays</a></span> Fri, April 19th, 15:08    <i>4min left</i>
+        </h2>   
+<div>
+    <p>I am good and you?</p>
+</div>
     <button type="button">+5 min</button>
-<h2 style="font-size:medium;">
-    <span><a href="https://map.what3words.com/daring.lion.race" style="color:#000000;" target="_blank">daring.lion.race</a></span> Fri, April 19th, 15:10     <i>6min left</i>
-</h2>    
-    <div style="width:80%;">
-        <p>I am doing well. What you up to?</p>
+</div>
     </div>
+<div class="message">
+    <h2>
+        <span><a href="https://map.what3words.com/daring.lion.race" target="_blank">daring.lion.race</a></span> Fri, April 19th, 15:10              <i>6min left</i>
+    </h2>    
+<div>
+    <p>I am doing well. What you up to?</p>
+</div>
     <button type="button">+5 min</button>
-<h2 style="font-size:medium;">
-    <span><a href="https://map.what3words.com/sampler.trips.stays" style="color:#000000;" target="_blank">sampler.trips.stays</a></span> Fri, April 19th 15:12   <i>8min left</i>
-</h2>  
-    <div style="width:80%;">
-        <p>Nothing much. Just chillin'.</p>
+</div>
+<div class="message">
+    <div class="own">
+        <h2>
+            <span><a href="https://map.what3words.com/sampler.trips.stays" target="_blank">sampler.trips.stays</a></span> Fri, April 19th 15:12     <i>8min left</i>
+        </h2>  
+<div>
+    <p>Nothing much. Just chillin'.</p>
+</div>
+    <button type="button">+5 min</button>
     </div>
-    <button type="button">+5 min</button>
+</div>
 </body>
 
 
